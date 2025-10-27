@@ -1,70 +1,177 @@
-# Getting Started with Create React App
+# Velora Hotel
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A **Hotel Reservation System** built using modern web technologies to provide a smooth and user-friendly booking experience.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Project Overview
 
-### `npm start`
+Velora Hotel enables users to:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Browse and filter hotel rooms
+- View detailed room information
+- Make and manage reservations
+- Smooth login/signup experience with authentication state handled in Redux
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The app is fully responsive with elegant animations and alerts.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+### Frontend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React.js**
+- **Redux Toolkit** (State Management)
+- **Axios**
+- **Framer Motion**
+- **React Date Range**
+- **Swiper.js**
+- **React Icons**
+- **React Toastify**
+- **SweetAlert2**
+- **DotLoader**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Backend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **MockAPI** for API data handling
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **Vercel**
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Authentication
+
+### **Login Page**
+
+- Email & password input validation
+- Error/success alerts using **Toastify**
+- Successful login saves user data in **Redux**
+- Animated welcome screen using **Framer Motion**
+
+### **Signup Page**
+
+- Fields: Username, Email, Password, Confirm Password
+- Validation for:
+  - Non‑empty inputs
+  - Password length
+  - Password match
+- Redirect to Login after success ✅
+
+---
+
+## Pages & Features
+
+### Home Page
+
+- Fetch rooms from **MockAPI**
+- Display rooms in responsive **Grid**
+- Filtering by:
+  - Room type (Single / Double / Suite)
+  - Price range
+- Sorting by price (Low → High / High → Low)
+- **Pagination** to improve browsing experience
+- Room card includes:
+  - Image
+  - Type
+  - Capacity
+  - Price
+  - Availability status
+  - Button → View Details
+- Uses **Toastify** for errors + **DotLoader** while fetching
+
+---
+
+### Dashboard Page
+
+- Shows active bookings of current logged user
+- Filtering bookings where `checkOut > Today`
+- Room details shown within booking:
+  - Image, name, type, price, dates
+- **Booking cancellation** with confirmation via **SweetAlert2**
+- Pagination + Loader + Empty state
+
+---
+
+### Navbar Component
+
+- Logo redirects to Home
+- Dynamic navigation based on authentication:
+  - Logged in → Home, Dashboard + Profile Dropdown (with Logout)
+  - Guest → Home, Login, Sign Up
+- Fully responsive:
+  - Desktop → Inline menu
+  - Mobile → Dropdown sliding menu
+- Beautiful effects: hover, transitions, scaling, shadow, gradient
+
+---
+
+### Room Details Page
+
+- Fetch room data + bookings based on ID from URL
+- **Image Gallery using Swiper**
+  - Pagination
+  - Navigation controls
+  - Hover effects
+  - Autoplay
+- Room information:
+  - Name, description, price, type, capacity, amenities
+- **Booking System**
+  - Date selection using **react‑date‑range**
+  - Disabled booked dates
+  - Conflict check before reservation
+  - If logged in → Book Now modal
+  - If guest → Request login with redirect
+  - After success → Add booking + redirect to Dashboard
+- Show **DotLoader** during fetching
+- 404 fallback if no room found
+
+---
+
+## Installation & Usage
+
+```bash
+# Clone the repo
+git clone https://github.com/mohand-ashraf/velora-hotel
+
+# Navigate to project folder
+cd velora-hotel
+
+# Install dependencies
+npm install
+
+# Run the project locally
+npm start
+```
+
+---
+
+## Live Demo
+
+👉 https://velora-hotel.vercel.app/
+
+---
+
+## GitHub Repository
+
+👉 https://github.com/mohand-ashraf/velora-hotel
+
+---
+
+## Status
+
+Project Completed ✅  
+Future Updates May Include:
+
+- Full Authentication with backend
+- Admin Dashboard
+- Online payment integration
+- Multilingual support
+
+---
+
+## Developed By
+
+**Mohand Ashraf**
