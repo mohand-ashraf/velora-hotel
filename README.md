@@ -150,13 +150,13 @@ npm start
 
 ## Live Demo
 
-👉 https://velora-hotel.vercel.app/
+https://velora-hotel.vercel.app/
 
 ---
 
 ## GitHub Repository
 
-👉 https://github.com/mohand-ashraf/velora-hotel
+https://github.com/mohand-ashraf/velora-hotel
 
 ---
 
