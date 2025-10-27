@@ -21,7 +21,7 @@ const Dashboard = () => {
 
     const fetchData = async () => {
       try {
-        const bookingsRes = await axios.get("https://68ff71e3e02b16d1753dfced.mockapi.io/api/vi/:booking");
+        const bookingsRes = await axios.get("https://68ff71e3e02b16d1753dfced.mockapi.io/api/vi/booking");
         const allBookings = Array.isArray(bookingsRes.data)
           ? bookingsRes.data
           : bookingsRes.data?.bookings || [];
@@ -35,7 +35,7 @@ const Dashboard = () => {
           (b) => new Date(b.checkOut) >= today
         );
 
-        const roomsRes = await axios.get("https://68ff71e3e02b16d1753dfced.mockapi.io/api/vi/:rooms");
+        const roomsRes = await axios.get("https://68ff71e3e02b16d1753dfced.mockapi.io/api/vi/rooms");
         const allRooms = Array.isArray(roomsRes.data)
           ? roomsRes.data
           : roomsRes.data?.rooms || [];
@@ -81,7 +81,7 @@ const Dashboard = () => {
 
     if (result.isConfirmed) {
       try {
-        await axios.delete(`https://68ff71e3e02b16d1753dfced.mockapi.io/api/vi/:booking/${bookingId}`);
+        await axios.delete(`https://68ff71e3e02b16d1753dfced.mockapi.io/api/vi/booking/${bookingId}`);
         setBookings((prev) => prev.filter((b) => b.id !== bookingId));
         toast.success("Reservation cancelled successfully!");
       } catch (err) {
@@ -108,15 +108,6 @@ const Dashboard = () => {
     return (
       <div className="flex justify-center items-center h-screen bg-gradient-to-br from-[#f5efe6] to-[#e9dcc9]">
         <DotLoader color="#b08968" size={50} />
-      </div>
-    );
-
-  if (!currentUser)
-    return (
-      <div className="flex justify-center items-center h-[300px] w-full mb-10">
-        <h1 className="font-Playwrite text-[50px] text-[#5c4327] font-semibold opacity-50 text-center">
-          Please log in to view your reservations.
-        </h1>
       </div>
     );
 
@@ -174,7 +165,6 @@ const Dashboard = () => {
                     </p>
                   </div>
 
-                  {/* التواريخ */}
                   <div className="flex flex-col items-start justify-start mt-3 text-sm text-[#5c4327] gap-1">
                     <span className="flex items-center gap-1">
                       <FaCalendarAlt className="text-blue-500" /> Check-in:{" "}

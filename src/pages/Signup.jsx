@@ -14,14 +14,12 @@ const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-
   const [touchedFields, setTouchedFields] = useState({
     username: false,
     email: false,
     password: false,
     confirmPassword: false,
   });
-
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {

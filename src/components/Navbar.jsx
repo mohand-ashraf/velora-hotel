@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { Menu, X, Hotel, LogOut, ChevronDown } from "lucide-react";
+import { Menu, X, LogOut, ChevronDown } from "lucide-react";
 import { useSelector, useDispatch } from "react-redux";
 import { logout } from "../features/auth/authSlice";
 
@@ -10,9 +10,7 @@ const Navbar = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const dispatch = useDispatch();
-
   const user = useSelector((state) => state.auth.user);
-
   const handleLogout = () => {
     dispatch(logout());
     navigate("/");
@@ -95,7 +93,6 @@ const Navbar = () => {
                 />
               </button>
 
-              {/* User Dropdown with fade + scale animation */}
               <div
                 className={`absolute right-0 mt-2 w-full bg-white/95 border border-[#d9c4a3]/40 rounded-xl shadow-xl backdrop-blur-sm overflow-hidden z-50 transform transition-all duration-300 ${
                   userMenuOpen

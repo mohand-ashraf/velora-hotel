@@ -15,7 +15,6 @@ const Home = () => {
   const [rooms, setRooms] = useState([]);
   const [filteredRooms, setFilteredRooms] = useState([]);
   const [loading, setLoading] = useState(true);
-
   const [typeFilter, setTypeFilter] = useState([]);
   const [minPrice, setMinPrice] = useState("");
   const [maxPrice, setMaxPrice] = useState("");
@@ -23,16 +22,14 @@ const Home = () => {
   const [sortDropdownOpen, setSortDropdownOpen] = useState(false);
   const dropdownRef = useRef();
   const sortRef = useRef();
-
   const [currentPage, setCurrentPage] = useState(0);
   const [sortOrder, setSortOrder] = useState("");
-
   const navigate = useNavigate();
 
   useEffect(() => {
     const start = Date.now();
     axios
-      .get("https://68ff71e3e02b16d1753dfced.mockapi.io/api/vi/:rooms")
+      .get("https://68ff71e3e02b16d1753dfced.mockapi.io/api/vi/rooms")
       .then((res) => {
         const duration = Date.now() - start;
         const remaining = 1000 - duration;

@@ -37,7 +37,6 @@ const RoomDetails = () => {
     },
   ]);
   const [user, setUser] = useState(null);
-
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -51,10 +50,10 @@ const RoomDetails = () => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const roomRes = await axios.get(`https://68ff71e3e02b16d1753dfced.mockapi.io/api/vi/:rooms/${id}`);
+        const roomRes = await axios.get(`https://68ff71e3e02b16d1753dfced.mockapi.io/api/vi/rooms/${id}`);
         setRoom(roomRes.data);
 
-        const bookingsRes = await axios.get(`https://68ff71e3e02b16d1753dfced.mockapi.io/api/vi/:booking`);
+        const bookingsRes = await axios.get(`https://68ff71e3e02b16d1753dfced.mockapi.io/api/vi/booking`);
         const roomBookings = bookingsRes.data.filter((b) => b.roomId === id);
         setBookings(roomBookings);
       } catch (error) {
@@ -131,7 +130,7 @@ const RoomDetails = () => {
         userId: user?.email || null,
       };
 
-      await axios.post("https://68ff71e3e02b16d1753dfced.mockapi.io/api/vi/:booking", bookingData);
+      await axios.post("https://68ff71e3e02b16d1753dfced.mockapi.io/api/vi/booking", bookingData);
 
       toast.success("Room booked successfully!");
       setOpenModal(false);
@@ -285,7 +284,6 @@ const RoomDetails = () => {
                 </span>
               </div>
 
-              {/* تعديل محاذاة زرار الحجز */}
               <div className="flex justify-center sm:justify-end w-full sm:w-auto mt-3 sm:mt-0">
                 <button
                   onClick={() => setOpenModal(true)}
@@ -338,7 +336,6 @@ const RoomDetails = () => {
                 const start = item.selection.startDate;
                 const end = item.selection.endDate;
 
-                // منع اختيار الأيام المحجوزة
                 let conflict = false;
                 for (
                   let d = new Date(start);

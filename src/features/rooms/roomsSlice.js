@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 export const fetchRooms = createAsyncThunk("rooms/fetchRooms", async () => {
-  const response = await fetch("https://68ff71e3e02b16d1753dfced.mockapi.io/api/vi/:rooms");
+  const response = await fetch("https://68ff71e3e02b16d1753dfced.mockapi.io/api/vi/rooms");
   const data = await response.json();
   return data;
 });
