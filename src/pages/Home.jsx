@@ -25,14 +25,14 @@ const Home = () => {
   const sortRef = useRef();
 
   const [currentPage, setCurrentPage] = useState(0);
-  const [sortOrder, setSortOrder] = useState(""); // "" | "asc" | "desc"
+  const [sortOrder, setSortOrder] = useState("");
 
   const navigate = useNavigate();
 
   useEffect(() => {
     const start = Date.now();
     axios
-      .get("http://localhost:5000/rooms")
+      .get("https://68ff71e3e02b16d1753dfced.mockapi.io/api/vi/:rooms")
       .then((res) => {
         const duration = Date.now() - start;
         const remaining = 1000 - duration;

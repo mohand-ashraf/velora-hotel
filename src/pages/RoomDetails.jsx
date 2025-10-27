@@ -51,10 +51,10 @@ const RoomDetails = () => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const roomRes = await axios.get(`http://localhost:5000/rooms/${id}`);
+        const roomRes = await axios.get(`https://68ff71e3e02b16d1753dfced.mockapi.io/api/vi/:rooms/${id}`);
         setRoom(roomRes.data);
 
-        const bookingsRes = await axios.get(`http://localhost:5000/bookings`);
+        const bookingsRes = await axios.get(`https://68ff71e3e02b16d1753dfced.mockapi.io/api/vi/:booking`);
         const roomBookings = bookingsRes.data.filter((b) => b.roomId === id);
         setBookings(roomBookings);
       } catch (error) {
@@ -131,7 +131,7 @@ const RoomDetails = () => {
         userId: user?.email || null,
       };
 
-      await axios.post("http://localhost:5000/bookings", bookingData);
+      await axios.post("https://68ff71e3e02b16d1753dfced.mockapi.io/api/vi/:booking", bookingData);
 
       toast.success("Room booked successfully!");
       setOpenModal(false);

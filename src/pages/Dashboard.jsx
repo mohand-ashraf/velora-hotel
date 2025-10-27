@@ -21,7 +21,7 @@ const Dashboard = () => {
 
     const fetchData = async () => {
       try {
-        const bookingsRes = await axios.get("http://localhost:5000/bookings");
+        const bookingsRes = await axios.get("https://68ff71e3e02b16d1753dfced.mockapi.io/api/vi/:booking");
         const allBookings = Array.isArray(bookingsRes.data)
           ? bookingsRes.data
           : bookingsRes.data?.bookings || [];
@@ -35,7 +35,7 @@ const Dashboard = () => {
           (b) => new Date(b.checkOut) >= today
         );
 
-        const roomsRes = await axios.get("http://localhost:5000/rooms");
+        const roomsRes = await axios.get("https://68ff71e3e02b16d1753dfced.mockapi.io/api/vi/:rooms");
         const allRooms = Array.isArray(roomsRes.data)
           ? roomsRes.data
           : roomsRes.data?.rooms || [];
@@ -81,7 +81,7 @@ const Dashboard = () => {
 
     if (result.isConfirmed) {
       try {
-        await axios.delete(`http://localhost:5000/bookings/${bookingId}`);
+        await axios.delete(`https://68ff71e3e02b16d1753dfced.mockapi.io/api/vi/:booking/${bookingId}`);
         setBookings((prev) => prev.filter((b) => b.id !== bookingId));
         toast.success("Reservation cancelled successfully!");
       } catch (err) {
