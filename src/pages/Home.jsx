@@ -89,27 +89,37 @@ const Home = () => {
     )
       toast.error("Max price cannot be less than Min price.");
 
-    const filtered = rooms.filter((room) => {
-      const matchesType =
-        typeFilter.length > 0 ? typeFilter.includes(room.type) : true;
-      const matchesMin = minPrice ? room.price >= Number(minPrice) : true;
-      const matchesMax = maxPrice ? room.price <= Number(maxPrice) : true;
-      return matchesType && matchesMin && matchesMax;
-    });
+    setLoading(true);
+    setTimeout(() => {
+      const filtered = rooms.filter((room) => {
+        const matchesType =
+          typeFilter.length > 0 ? typeFilter.includes(room.type) : true;
+        const matchesMin = minPrice ? room.price >= Number(minPrice) : true;
+        const matchesMax = maxPrice ? room.price <= Number(maxPrice) : true;
+        return matchesType && matchesMin && matchesMax;
+      });
 
-    setFilteredRooms(filtered);
-    setCurrentPage(0);
-    if (filtered.length === 0 && rooms.length > 0)
-      toast.error("No rooms match your filter.");
+      setFilteredRooms(filtered);
+      setCurrentPage(0);
+      setLoading(false);
+      if (filtered.length === 0 && rooms.length > 0)
+        toast.error("No rooms match your filter.");
+      else toast.success("Search applied successfully!");
+    }, 500);
   };
 
   const handleSort = (order) => {
     setSortOrder(order);
-    let sorted = [...filteredRooms];
-    if (order === "asc") sorted.sort((a, b) => a.price - b.price);
-    else if (order === "desc") sorted.sort((a, b) => b.price - a.price);
-    setFilteredRooms(sorted);
-    setSortDropdownOpen(false);
+    setLoading(true);
+    setTimeout(() => {
+      let sorted = [...filteredRooms];
+      if (order === "asc") sorted.sort((a, b) => a.price - b.price);
+      else if (order === "desc") sorted.sort((a, b) => b.price - a.price);
+      setFilteredRooms(sorted);
+      setSortDropdownOpen(false);
+      setLoading(false);
+      toast.success("Sort applied successfully!");
+    }, 500);
   };
 
   const handlePageChange = (event, value) => {
