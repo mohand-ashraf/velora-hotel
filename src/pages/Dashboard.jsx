@@ -21,7 +21,9 @@ const Dashboard = () => {
 
     const fetchData = async () => {
       try {
-        const bookingsRes = await axios.get("https://68ff71e3e02b16d1753dfced.mockapi.io/api/vi/booking");
+        const bookingsRes = await axios.get(
+          "https://68ff71e3e02b16d1753dfced.mockapi.io/api/vi/booking"
+        );
         const allBookings = Array.isArray(bookingsRes.data)
           ? bookingsRes.data
           : bookingsRes.data?.bookings || [];
@@ -35,7 +37,9 @@ const Dashboard = () => {
           (b) => new Date(b.checkOut) >= today
         );
 
-        const roomsRes = await axios.get("https://68ff71e3e02b16d1753dfced.mockapi.io/api/vi/rooms");
+        const roomsRes = await axios.get(
+          "https://68ff71e3e02b16d1753dfced.mockapi.io/api/vi/rooms"
+        );
         const allRooms = Array.isArray(roomsRes.data)
           ? roomsRes.data
           : roomsRes.data?.rooms || [];
@@ -81,7 +85,9 @@ const Dashboard = () => {
 
     if (result.isConfirmed) {
       try {
-        await axios.delete(`https://68ff71e3e02b16d1753dfced.mockapi.io/api/vi/booking/${bookingId}`);
+        await axios.delete(
+          `https://68ff71e3e02b16d1753dfced.mockapi.io/api/vi/booking/${bookingId}`
+        );
         setBookings((prev) => prev.filter((b) => b.id !== bookingId));
         toast.success("Reservation cancelled successfully!");
       } catch (err) {
@@ -114,7 +120,7 @@ const Dashboard = () => {
   if (bookings.length === 0)
     return (
       <div className="flex justify-center items-center h-[300px] w-full mb-10">
-        <h1 className="font-Playwrite text-[70px] text-[#5c4327] font-semibold opacity-50 text-center">
+        <h1 className="font-Playwrite text-[40px] sm:text-[50px] md:text-[70px] text-[#5c4327] font-semibold opacity-50 text-center">
           You have no active reservations.
         </h1>
       </div>

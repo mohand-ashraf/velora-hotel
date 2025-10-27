@@ -296,7 +296,7 @@ const Home = () => {
         {/* Empty State */}
         {paginatedRooms.length === 0 && (
           <div className="flex justify-center items-center h-[300px] w-full mb-10">
-            <h1 className="font-Playwrite text-[70px] text-[#5c4327] font-semibold opacity-50 text-center">
+            <h1 className="font-Playwrite text-[40px] sm:text-[50px] md:text-[70px] text-[#5c4327] font-semibold opacity-50 text-center">
               {rooms.length === 0
                 ? "No rooms available."
                 : "No rooms match your filter."}
