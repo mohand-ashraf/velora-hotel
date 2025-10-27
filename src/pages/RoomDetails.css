@@ -1,0 +1,24 @@
+.custom-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #d9cbb7;
+  opacity: 0.6;
+  border-radius: 50%;
+  margin: 0 6px !important;
+  transition: all 0.3s ease;
+}
+
+.custom-bullet-active {
+  background-color: #b08968;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.custom-prev,
+.custom-next {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}

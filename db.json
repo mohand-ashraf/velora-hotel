@@ -1,0 +1,496 @@
+{
+  "rooms": [
+    {
+      "id": "1",
+      "name": "Cozy Single Room",
+      "type": "Single",
+      "price": 1000,
+      "description": "A cozy single room designed for comfort and relaxation. Perfect for solo travelers seeking a peaceful stay with all modern conveniences, including a comfortable bed, work desk, and a bright atmosphere for reading or working.",
+      "amenities": [
+        "Free Wi-Fi",
+        "Air Conditioning",
+        "TV",
+        "Work Desk",
+        "Coffee Maker",
+        "Private Bathroom"
+      ],
+      "capacity": 1,
+      "available": true,
+      "images": [
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+        "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg",
+        "https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Deluxe Double Room with Balcony",
+      "type": "Double",
+      "price": 1800,
+      "description": "A spacious double room featuring a cozy seating area, large windows with natural light, and a private balcony with a scenic view. Ideal for couples or friends traveling together.",
+      "amenities": [
+        "Wi-Fi",
+        "Mini Bar",
+        "Smart TV",
+        "Balcony",
+        "Air Conditioning",
+        "Coffee Maker",
+        "Room Service"
+      ],
+      "capacity": 2,
+      "available": true,
+      "images": [
+        "https://images.unsplash.com/photo-1673687782286-674e29c9bf9e?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2070",
+        "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg",
+        "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Luxury Suite with Jacuzzi",
+      "type": "Suite",
+      "price": 3000,
+      "description": "A luxury suite offering a separate living area, elegant decor, and a private jacuzzi. Perfect for guests looking for a premium experience with privacy and comfort.",
+      "amenities": [
+        "Wi-Fi",
+        "Jacuzzi",
+        "Mini Bar",
+        "Room Service",
+        "King Bed",
+        "Smart TV",
+        "Private Balcony"
+      ],
+      "capacity": 4,
+      "available": true,
+      "images": [
+        "https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&q=80&w=1170",
+        "https://images.pexels.com/photos/271643/pexels-photo-271643.jpeg",
+        "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Compact Single Room",
+      "type": "Single",
+      "price": 1200,
+      "description": "A compact and affordable single room perfect for solo travelers. Comes with a modern bathroom, cozy lighting, and all essential facilities for a relaxing stay.",
+      "amenities": [
+        "Wi-Fi",
+        "TV",
+        "Air Conditioning",
+        "Hair Dryer",
+        "Private Bathroom",
+        "Closet"
+      ],
+      "capacity": 1,
+      "available": true,
+      "images": [
+        "https://plus.unsplash.com/premium_photo-1661964402307-02267d1423f5?auto=format&fit=crop&q=80&w=1073",
+        "https://images.pexels.com/photos/3659683/pexels-photo-3659683.jpeg",
+        "https://images.pexels.com/photos/1743231/pexels-photo-1743231.jpeg"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Modern Double Room",
+      "type": "Double",
+      "price": 1900,
+      "description": "A modern double room with stylish decor, ambient lighting, and a comfortable bed. Ideal for couples seeking a peaceful escape with a touch of elegance.",
+      "amenities": [
+        "Wi-Fi",
+        "Mini Bar",
+        "Hair Dryer",
+        "Smart TV",
+        "Balcony",
+        "Room Service",
+        "Safe Box"
+      ],
+      "capacity": 2,
+      "available": true,
+      "images": [
+        "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&q=80&w=1170",
+        "https://images.pexels.com/photos/3201763/pexels-photo-3201763.jpeg",
+        "https://images.pexels.com/photos/2029719/pexels-photo-2029719.jpeg"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Executive Suite with Workspace",
+      "type": "Suite",
+      "price": 3500,
+      "description": "An executive suite offering a spacious living area, private balcony, and workspace. Designed for business travelers and families who value both comfort and functionality.",
+      "amenities": [
+        "Wi-Fi",
+        "Jacuzzi",
+        "Mini Bar",
+        "Workspace",
+        "Smart TV",
+        "King Bed",
+        "Coffee Maker"
+      ],
+      "capacity": 3,
+      "available": true,
+      "images": [
+        "https://plus.unsplash.com/premium_photo-1675616563084-63d1f129623d?auto=format&fit=crop&q=80&w=1169",
+        "https://images.pexels.com/photos/276671/pexels-photo-276671.jpeg",
+        "https://images.pexels.com/photos/2029698/pexels-photo-2029698.jpeg"
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Business Single Room",
+      "type": "Single",
+      "price": 1100,
+      "description": "A quiet single room designed for business travelers. Features a comfortable bed, work desk, and complimentary Wi-Fi for productivity during your stay.",
+      "amenities": [
+        "Wi-Fi",
+        "Desk",
+        "TV",
+        "Coffee Maker",
+        "Private Bathroom",
+        "Air Conditioning"
+      ],
+      "capacity": 1,
+      "available": true,
+      "images": [
+        "https://images.unsplash.com/photo-1631049552057-403cdb8f0658?auto=format&fit=crop&q=80&w=1170",
+        "https://cdn.pixabay.com/photo/2019/05/28/00/15/indoors-4234072_1280.jpg",
+        "https://cdn.pixabay.com/photo/2020/02/01/06/12/upholstery-4809588_1280.jpg"
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Garden View Double Room",
+      "type": "Double",
+      "price": 2100,
+      "description": "A bright and airy double room overlooking the garden. Enjoy the fresh atmosphere, comfortable bed, and a balcony to unwind after a long day.",
+      "amenities": [
+        "Wi-Fi",
+        "Balcony",
+        "Mini Fridge",
+        "Smart TV",
+        "Hair Dryer",
+        "Air Conditioning"
+      ],
+      "capacity": 2,
+      "available": true,
+      "images": [
+        "https://images.unsplash.com/photo-1568495248636-6432b97bd949?auto=format&fit=crop&q=80&w=1074",
+        "https://images.pexels.com/photos/3688261/pexels-photo-3688261.jpeg",
+        "https://images.pexels.com/photos/3659681/pexels-photo-3659681.jpeg"
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Premium Sea View Suite",
+      "type": "Suite",
+      "price": 4000,
+      "description": "A premium suite with panoramic sea view, private jacuzzi, and spacious lounge area. Designed for ultimate relaxation and luxury living.",
+      "amenities": [
+        "Wi-Fi",
+        "Jacuzzi",
+        "Sea View",
+        "Room Service",
+        "Mini Bar",
+        "Smart TV",
+        "Private Balcony"
+      ],
+      "capacity": 4,
+      "available": true,
+      "images": [
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=1170",
+        "https://images.pexels.com/photos/7746572/pexels-photo-7746572.jpeg",
+        "https://images.pexels.com/photos/8082235/pexels-photo-8082235.jpeg"
+      ]
+    },
+    {
+      "id": "10",
+      "name": "City View Single Room",
+      "type": "Single",
+      "price": 1300,
+      "description": "A comfortable single room with a large bed, modern furnishings, and a beautiful city view. Ideal for travelers seeking simplicity with style.",
+      "amenities": [
+        "Wi-Fi",
+        "TV",
+        "Air Conditioning",
+        "Desk",
+        "Private Bathroom",
+        "Coffee Maker"
+      ],
+      "capacity": 1,
+      "available": true,
+      "images": [
+        "https://images.unsplash.com/photo-1587985064135-0366536eab42?auto=format&fit=crop&q=80&w=1170",
+        "https://images.pexels.com/photos/8092391/pexels-photo-8092391.jpeg",
+        "https://images.pexels.com/photos/5461590/pexels-photo-5461590.jpeg"
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Elegant Double Room",
+      "type": "Double",
+      "price": 2200,
+      "description": "A spacious double room featuring elegant decor, premium bedding, and a relaxing ambiance for couples looking to enjoy a memorable stay.",
+      "amenities": [
+        "Wi-Fi",
+        "Mini Bar",
+        "Smart TV",
+        "Air Conditioning",
+        "Coffee Maker",
+        "Private Bathroom"
+      ],
+      "capacity": 2,
+      "available": true,
+      "images": [
+        "https://images.unsplash.com/photo-1587985064135-0366536eab42?auto=format&fit=crop&q=80&w=1170",
+        "https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+        "https://images.unsplash.com/photo-1568495248636-6432b97bd949?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074"
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Family Suite with Kitchen",
+      "type": "Suite",
+      "price": 4200,
+      "description": "A family suite with two bedrooms, a modern kitchen, and a spacious living room. Perfect for families or long-term stays with all the comforts of home.",
+      "amenities": [
+        "Wi-Fi",
+        "Kitchen",
+        "Living Room",
+        "Smart TV",
+        "Dining Table",
+        "Washing Machine",
+        "Balcony"
+      ],
+      "capacity": 5,
+      "available": true,
+      "images": [
+        "https://images.unsplash.com/photo-1562438668-bcf0ca6578f0?auto=format&fit=crop&q=80&w=1460",
+        "https://images.unsplash.com/photo-1631049552057-403cdb8f0658?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+        "https://images.unsplash.com/photo-1667125095636-dce94dcbdd96?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=852"
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Poolside Single Room",
+      "type": "Single",
+      "price": 1400,
+      "description": "A peaceful single room located near the hotel pool. Ideal for short stays, offering comfort and modern design with easy access to amenities.",
+      "amenities": [
+        "Wi-Fi",
+        "TV",
+        "Air Conditioning",
+        "Pool Access",
+        "Private Bathroom"
+      ],
+      "capacity": 1,
+      "available": true,
+      "images": [
+        "https://images.unsplash.com/photo-1631049552240-59c37f38802b?auto=format&fit=crop&q=80&w=1170",
+        "https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074",
+        "https://images.unsplash.com/flagged/photo-1556438758-8d49568ce18e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1174"
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Rooftop Double Room",
+      "type": "Double",
+      "price": 2000,
+      "description": "A double room with direct access to the rooftop terrace. Offers a stylish interior and beautiful views — perfect for couples.",
+      "amenities": [
+        "Wi-Fi",
+        "Balcony",
+        "Mini Bar",
+        "Smart TV",
+        "Coffee Maker",
+        "Room Service"
+      ],
+      "capacity": 2,
+      "available": true,
+      "images": [
+        "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?auto=format&fit=crop&q=80&w=1074",
+        "https://plus.unsplash.com/premium_photo-1678297270523-8775c817d0b3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687",
+        "https://images.unsplash.com/photo-1587985064135-0366536eab42?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
+      ]
+    },
+    {
+      "id": "15",
+      "name": "Honeymoon Luxury Suite",
+      "type": "Suite",
+      "price": 3800,
+      "description": "A luxury suite featuring a private jacuzzi, large windows, and an elegant seating area. Perfect for honeymoons or exclusive stays.",
+      "amenities": [
+        "Wi-Fi",
+        "Jacuzzi",
+        "Mini Bar",
+        "TV",
+        "Balcony",
+        "Coffee Maker",
+        "Room Service"
+      ],
+      "capacity": 4,
+      "available": true,
+      "images": [
+        "https://images.unsplash.com/photo-1592229505726-ca121723b8ef?auto=format&fit=crop&q=80&w=1074",
+        "https://images.unsplash.com/photo-1566195992011-5f6b21e539aa?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074",
+        "https://images.unsplash.com/photo-1609766857041-ed402ea8069a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
+      ]
+    },
+    {
+      "id": "16",
+      "name": "Budget Single Room",
+      "type": "Single",
+      "price": 1150,
+      "description": "A budget-friendly single room with a minimalist modern design. Great choice for short-term travelers or solo adventurers.",
+      "amenities": [
+        "Wi-Fi",
+        "TV",
+        "Private Bathroom",
+        "Air Conditioning",
+        "Coffee Maker"
+      ],
+      "capacity": 1,
+      "available": true,
+      "images": [
+        "https://images.unsplash.com/photo-1590490359854-dfba19688d70?auto=format&fit=crop&q=80&w=1074",
+        "https://images.unsplash.com/photo-1631049552240-59c37f38802b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+        "https://images.unsplash.com/photo-1595161695996-f746349f4945?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1014"
+      ]
+    },
+    {
+      "id": "17",
+      "name": "Elegant Double Deluxe Room",
+      "type": "Double",
+      "price": 2400,
+      "description": "An elegant double room with warm lighting, soft fabrics, and modern furniture. Designed for relaxation and comfort.",
+      "amenities": [
+        "Wi-Fi",
+        "Mini Bar",
+        "Smart TV",
+        "Air Conditioning",
+        "Balcony",
+        "Hair Dryer"
+      ],
+      "capacity": 2,
+      "available": true,
+      "images": [
+        "https://images.unsplash.com/photo-1605346576608-92f1346b67d6?auto=format&fit=crop&q=80&w=1170",
+        "https://images.unsplash.com/photo-1592230228921-df3a88a2244e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1332",
+        "https://images.unsplash.com/photo-1631049035182-249067d7618e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
+      ]
+    },
+    {
+      "id": "18",
+      "name": "Presidential Suite",
+      "type": "Suite",
+      "price": 4500,
+      "description": "A presidential suite with a luxurious lounge, king-size bed, and panoramic city views. Experience unmatched elegance and service.",
+      "amenities": [
+        "Wi-Fi",
+        "Jacuzzi",
+        "Mini Bar",
+        "Lounge",
+        "Room Service",
+        "Smart TV",
+        "Dining Area"
+      ],
+      "capacity": 5,
+      "available": true,
+      "images": [
+        "https://images.unsplash.com/photo-1653974123177-fe9c05fb79e6?auto=format&fit=crop&q=80&w=1332",
+        "https://images.unsplash.com/photo-1631048730670-ff5cd0d08f15?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+        "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
+      ]
+    },
+    {
+      "id": "19",
+      "name": "Lobby Access Single Room",
+      "type": "Single",
+      "price": 1250,
+      "description": "A well-furnished single room close to the reception and lobby. Ideal for guests looking for quick access and convenience.",
+      "amenities": [
+        "Wi-Fi",
+        "TV",
+        "Air Conditioning",
+        "Private Bathroom",
+        "Desk"
+      ],
+      "capacity": 1,
+      "available": true,
+      "images": [
+        "https://images.unsplash.com/photo-1566195992011-5f6b21e539aa?auto=format&fit=crop&q=80&w=1074",
+        "https://images.unsplash.com/photo-1614162887536-589cbcd2a1cd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687",
+        "https://images.unsplash.com/photo-1713762523087-41019a875741?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
+      ]
+    },
+    {
+      "id": "20",
+      "name": "Garden View Deluxe Room",
+      "type": "Double",
+      "price": 2300,
+      "description": "A beautiful double room with premium bedding and a serene garden view. Offers an inviting and tranquil stay for couples.",
+      "amenities": [
+        "Wi-Fi",
+        "Balcony",
+        "Mini Bar",
+        "Smart TV",
+        "Coffee Maker",
+        "Room Service"
+      ],
+      "capacity": 2,
+      "available": true,
+      "images": [
+        "https://images.unsplash.com/photo-1741506131058-533fcf894483?auto=format&fit=crop&q=80&w=1074",
+        "https://images.unsplash.com/photo-1578898886615-0c4719f932dc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687",
+        "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1171"
+      ]
+    },
+    {
+      "id": "21",
+      "name": "Royal Sea View Suite",
+      "type": "Suite",
+      "price": 4800,
+      "description": "An exclusive royal suite offering a private jacuzzi, dining area, and panoramic sea view. Designed for luxury seekers who expect the very best.",
+      "amenities": [
+        "Wi-Fi",
+        "Jacuzzi",
+        "Mini Bar",
+        "Sea View",
+        "Private Balcony",
+        "Smart TV",
+        "Lounge",
+        "Coffee Maker"
+      ],
+      "capacity": 5,
+      "available": true,
+      "images": [
+        "https://images.unsplash.com/photo-1592229505726-ca121723b8ef?auto=format&fit=crop&q=80&w=1074",
+        "https://images.unsplash.com/photo-1598928636135-d146006ff4be?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+        "https://images.unsplash.com/photo-1613553474179-e1eda3ea5734?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
+      ]
+    }
+  ],
+  "bookings": [
+    {
+      "id": "68bf6a",
+      "roomId": "1",
+      "checkIn": "2025-10-31",
+      "checkOut": "2025-11-19",
+      "userId": "mohand123@gmail.com"
+    },
+    {
+      "id": "14e409",
+      "roomId": "2",
+      "checkIn": "2025-10-31",
+      "checkOut": "2025-11-30",
+      "userId": "mohand123@gmail.com"
+    },
+    {
+      "id": "d0b9fd",
+      "roomId": "1",
+      "checkIn": "2025-12-02",
+      "checkOut": "2025-12-05",
+      "userId": "mohand123@gmail.com"
+    }
+  ]
+}
